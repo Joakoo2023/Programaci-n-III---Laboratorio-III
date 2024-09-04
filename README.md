@@ -1,1 +1,2 @@
-Creación de una página HTML básica utilizando los elementos HTML y etiquetas básicas que se han visto en clase.
+Carpeta HTML: Creación de una página HTML básica utilizando los elementos HTML y etiquetas básicas que se han visto en clase.
+Carpeta CSS: Propiedades de CSS para estilizar elementos HTML. Uso de propiedades de texto, propiedades de caja, posicionamiento, media queries, grid y animaciones en CSS. Uso de diferente técnicas de diseño para crear páginas web atractivas y adaptables a distintos dispositivos. Integración de los conceptos básicos de diseño web, asegurando la semántica y la accesibilidad en la implementación.
