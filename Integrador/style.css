@@ -1,0 +1,280 @@
+
+/* ===== GENERALES ===== */
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif ;
+  }
+  
+  /* ===== HEADER ===== */
+  .container__principalHeader{
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .container__contentHeader{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem;
+  }
+  .headerSearch{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2vh;
+  }
+  .inputHeader{
+    border-radius: .4rem;
+    border: none;
+    padding: .4rem;
+    outline: none;
+    font-size: 1.7vh;
+    width: 20vw;
+    height: 2vh;
+  }
+  .buttonSearch{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: .4rem;
+    padding: .4rem;
+    width: 8vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+  .buttonSearch:hover{
+    cursor: pointer;
+    background-color: rgb(70, 70, 74);
+    transition: .2s ease;
+  }
+  .header__buttonAdd{
+    width: 15vw;
+    padding: .4rem;
+    border-radius: .4rem;
+    border: 1pd solid white;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header__buttonAdd:hover{
+    cursor: pointer;
+    background-color: rgb(138, 138, 138);
+    transition: .2s ease;
+  }
+  
+  /* ===== MAIN ===== */
+  .container__view{
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+  }
+  .listAside{
+    background-color: rgb(136, 0, 0);
+    color: white;
+    height: 92vh;
+  }
+  /* ===== STORE ===== */
+  .store{
+    background-image: url('./media/fondo.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    max-height: 92vh;
+    overflow: auto;
+    width: 100%;
+  }
+  .sectionStore{
+    background-color: #f3ededfa;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 0.8rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .containerTitleSection{
+    margin: 1rem;
+    font-size: 4vh;
+    border-bottom: 1ps solid grey;
+  }
+  .containerProductStore{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,0.6fr);
+    gap: 2vh;
+  }
+  .containerTargetItem {
+    width: 20vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    background-color: white;
+    box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.3);
+    transition: .2s ease;
+  }
+  .containerTargetItem:hover {
+    cursor: pointer;
+    transform: scale(1.08); 
+    box-shadow: 2px 2px 10px 6px rgba(0, 0, 0, 0.4); 
+  }
+  .containerTargetItem h2{
+    font-size: 3vh;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .targetProps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .sectionStore img {
+    width: 100%;
+    height: 200px; /* Ajusta la altura de las imágenes para que todas sean consistentes */
+    object-fit: cover;
+    border-radius: 0.4rem;
+    box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+  /* ===== LISTASIDE ===== */
+  .listAside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .listAside h2 {
+    display: flex;
+    margin-top: 2vh;
+    font-size: 3vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .listAside ul {
+    margin-top: 3vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 1vh;
+  }
+  .listAside ul li {
+    font-size: 2vh;
+    font-weight: 500;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+  }
+  .listAside ul li:hover{
+    cursor: pointer;
+    background-color: rgb(82, 0, 0);
+    color: white;
+  } 
+  .liActive{
+    background-color:#020202;
+    color: white;
+  }
+  
+  /* ===== POPUP ===== */
+  .popUpContainer__principal{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+  }
+  .popUpContainer{
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+    box-shadow: 5px 2px 10px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+  }
+  .containerTitlePopUp{
+    width: 100%;
+    text-align: center; 
+  }
+  .containerInputs__popUP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+  }
+  .containerInputs__popUP input, .containerInputs__popUP select{
+    width: 60%;
+    border: 1px solid grey;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+  }
+  .containerButtonsPopUp{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .buttonPopUP{
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 2vh;
+  }
+  .cancel{
+    cursor: pointer;
+    background-color: rgb(237, 183, 46);
+  }
+  .accept{
+    cursor: pointer;
+    background-color: rgb(14, 149, 14);
+  }
+  .delete{
+    cursor: pointer;
+    background-color: rgb(216, 0, 0);
+  }
+  
+  /* MEDIA QUERYS */
+
+@media screen and (min-width: 1280px) {
+  .containerProductStore{
+    grid-template-columns: repeat(4, .6fr);
+  }
+  .containerTargetItem{
+    width: 15vw;
+  }
+}
+
+/* ===SCROLLBAR=== */
+::-webkit-scrollbar{
+  width: .7rem;
+  background-color: white;
+  border-radius: .4rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #740606;
+  border-radius: .4rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #792020;
+
+}
