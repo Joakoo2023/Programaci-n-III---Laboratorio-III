@@ -115,8 +115,8 @@
     gap: 2vh;
   }
   .containerTargetItem {
-    width: 20vw;
-    height: 35vh;
+    width: 30vw;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
